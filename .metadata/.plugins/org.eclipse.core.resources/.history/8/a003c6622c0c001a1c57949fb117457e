@@ -1,0 +1,6 @@
+package com.testtwo.web.cfg;
+
+public class MyBatisConfig {
+
+	
+}

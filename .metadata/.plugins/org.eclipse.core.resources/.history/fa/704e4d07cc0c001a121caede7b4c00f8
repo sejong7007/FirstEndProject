@@ -1,0 +1,7 @@
+package com.testtwo.web.pxy;
+
+public class CusProxy extends Proxy {
+	
+	
+
+}

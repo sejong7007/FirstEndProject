@@ -1,0 +1,8 @@
+package com.testone.web.pxy;
+
+public class Proxy {
+
+	public String string(Object param) {
+		return null;
+	}
+}

@@ -1,0 +1,20 @@
+var app = app || {}
+
+app=(()=>{
+	
+	let _, ctx, img, js
+	
+	let init =()=>{
+		alert('sssjj')
+	}
+	
+	let onCreate =()=>{
+		
+	}
+	
+	let setContextView =()=>{
+		
+	}
+	
+	return {onCreate}
+})();

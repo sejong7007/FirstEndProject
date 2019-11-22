@@ -1,0 +1,16 @@
+package com.testtwo.web.cus;
+
+import org.springframework.stereotype.Component;
+import com.testtwo.web.pxy.*;
+
+@Component
+public class CustomerService extends Proxy{
+
+	public String test() {
+		int i=1;
+		for(;i<=10 ; i++) {
+			System.out.println(i+"+");
+		}
+		return string(i);
+	}
+}

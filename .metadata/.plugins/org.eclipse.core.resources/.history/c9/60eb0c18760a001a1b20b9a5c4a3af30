@@ -1,0 +1,34 @@
+package com.testtwo.web.pxy;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class box<T> {
+
+	private HashMap<String,T> box;
+	
+	public box() {
+		box = new HashMap<String, T>();
+	}
+	
+	public void put(List<String> x, Inventory<T> y) {
+		for(int i=0 ; i<x.size() ; i++) {
+			box.put(x.get(i), y.get(i));
+		}
+		box.forEach((k,v)->System.out.println(String.format("%s : %s", k,v)));
+	}
+	
+	public HashMap<String, Object> get(){
+		return box;
+	}
+	
+	public void clear() {
+		box.clear();
+	}
+	
+	
+	
+}

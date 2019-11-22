@@ -1,0 +1,15 @@
+package com.testtwo.web.pxy;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Json<T> {
+
+	private HashMap<String,T> json;
+	
+	public HashMap<> {
+		json = new HashMap<>();
+	}
+}

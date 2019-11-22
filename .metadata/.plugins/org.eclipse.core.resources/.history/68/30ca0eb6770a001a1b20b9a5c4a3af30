@@ -1,0 +1,10 @@
+package com.testtwo.web.pxy;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component("crawler")
+@Lazy
+public class CrawlingPorxy extends Proxy{
+
+}

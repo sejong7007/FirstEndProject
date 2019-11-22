@@ -1,0 +1,51 @@
+package com.stock.web.sejong;
+
+import java.util.Map;
+import java.util.function.Consumer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/bugs")
+public class BugsCtrl {
+	
+	@Autowired BugsBean bugsbean;
+	@Autowired BugsMapper bugsmapper;
+	
+	private static final Logger logger = LoggerFactory.getLogger(BugsCtrl.class);
+	
+	@GetMapping("/page/{pageNo}/size/{pageSize}")
+	public Map<?,?> listArt(@PathVariable String pageNo, @PathVariable String pageSize){
+		
+		System.out.println("넘어오는 값 : "+pageNo+" , "+pageSize);
+		
+		/*pxy.setPageNum(pxy.parseInt(pageNo));
+		pxy.setPageSize(pxy.parseInt(pageSize));
+		pxy.paging();
+		list.clear();
+		Supplier<List<Article>> s = () -> artMapper.selectAll(pxy);
+		
+		List<Integer> pagelist = new ArrayList<>();
+		for( int i=pxy.getStartPage(); i<pxy.getEndPage()+1 ; i++) {
+			pagelist.add(i);
+		}
+		
+		System.out.println("넘어가는 값 : "+pxy.getPages());
+		
+		map.accept(Arrays.asList("articles", "pxy"),
+				   Arrays.asList(s.get(), pxy)) ;
+		return map.get();*/
+		
+		
+		return null;
+	}
+	
+}

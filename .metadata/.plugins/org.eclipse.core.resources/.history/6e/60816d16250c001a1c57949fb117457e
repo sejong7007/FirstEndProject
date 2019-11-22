@@ -1,0 +1,27 @@
+package com.testtwo.web.test;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+
+import com.testtwo.web.pxy.Calculator;
+
+public class CalculatorTest {
+
+	final Calculator cal = new Calculator();
+	@Test
+	public void testSum() {
+		assertThat(cal.sum(1, 4), is(equalTo(5)));
+	}
+
+	@Test
+	public void testSub() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAbc() {
+		fail("Not yet implemented");
+	}
+
+}

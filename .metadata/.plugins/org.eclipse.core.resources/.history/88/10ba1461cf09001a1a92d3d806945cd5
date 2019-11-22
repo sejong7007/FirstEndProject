@@ -1,0 +1,5 @@
+package com.testone.web.pxy;
+
+public class Proxy {
+
+}

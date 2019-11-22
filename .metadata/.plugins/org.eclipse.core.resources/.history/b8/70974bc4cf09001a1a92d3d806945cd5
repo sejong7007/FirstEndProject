@@ -1,0 +1,9 @@
+var app = app || {}
+
+app=(()=>{
+	let init =()=>{
+		alert('sssjj')
+	}
+	
+	return {init}
+})();

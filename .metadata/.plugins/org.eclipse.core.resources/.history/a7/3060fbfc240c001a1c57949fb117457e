@@ -1,0 +1,24 @@
+package com.testtwo.web.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void testSum() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSub() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAbc() {
+		fail("Not yet implemented");
+	}
+
+}

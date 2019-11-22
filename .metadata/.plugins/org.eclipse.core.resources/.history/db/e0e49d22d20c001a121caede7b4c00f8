@@ -1,0 +1,12 @@
+package com.testtwo.web.cus;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CustomerService {
+
+	public String test() {
+		System.out.println("Hello");
+		return "Hellow";
+	}
+}

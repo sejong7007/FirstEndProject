@@ -1,0 +1,33 @@
+package com.stock.web.cgv;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/hr")
+public class HrController {
+	
+	/*@Autowired Trunk<Object> trunk;
+	@Autowired HrService hrService;
+	@Autowired HrMapper hrMapper;
+	
+	@GetMapping("/{targetSite}/{searchWrd}")
+	public Trunk<Object> register(@PathVariable String targetSite,
+			@PathVariable String searchWrd) throws Exception{
+		trunk.accept(Arrays.asList("targetSite","searchWrd"),Arrays.asList(targetSite,searchWrd) );
+		hrService.crawling(trunk);
+		trunk.accept(Arrays.asList("msg"),Arrays.asList("SUCCESS"));
+		return trunk;		
+	}	
+	
+	
+	@GetMapping("/cgv")
+	public HashMap<String, Object> Cgv() throws Exception{
+		Supplier<List<Cgv>> n = () -> hrMapper.selectCgv();
+		trunk.accept(Arrays.asList("msg", "cgv"), Arrays.asList("SUCCESS", n.get()));
+		return trunk.get();
+	}*/	
+	
+}

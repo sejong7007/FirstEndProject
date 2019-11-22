@@ -1,0 +1,28 @@
+package com.testtwo.web.pxy;
+
+import java.util.function.BiPredicate;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
+import org.springframework.stereotype.Component;
+
+@Component("pxy")
+public class Proxy {
+
+	public int integer(String t) {
+		Function<String, Integer> f = Integer::parseInt;
+		return f.apply(t);
+	}
+	
+	
+	public boolean equal(String a, String b) {
+		BiPredicate<String,String> f = String::equals;
+		return f.test(a, b);
+	}
+	
+	public void print(String a) {
+		Consumer<String> c = System.out::print;
+		c.accept(a);
+	}
+	
+}

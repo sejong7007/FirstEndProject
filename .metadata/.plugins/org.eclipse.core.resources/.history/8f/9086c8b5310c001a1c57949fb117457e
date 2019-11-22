@@ -1,0 +1,5 @@
+package com.testtwo.web.enums;
+
+public class Path {
+
+}

@@ -1,0 +1,14 @@
+package com.testtwo.web.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CustomerServiceTest {
+
+	@Test
+	public void testTest() {
+		fail("Not yet implemented");
+	}
+
+}

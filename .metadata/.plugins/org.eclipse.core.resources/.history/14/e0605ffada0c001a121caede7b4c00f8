@@ -1,0 +1,12 @@
+package com.testtwo.web.cus;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CustomerMapper {
+	public int rowCount();
+	public List<Customer> selectAll();
+}
+

@@ -1,0 +1,15 @@
+package com.testtwo.web.pxy;
+
+import java.util.function.Function;
+
+import org.springframework.stereotype.Component;
+
+@Component("pxy")
+public class Proxy {
+
+	public int integer(String t) {
+		Function<String, Integer> f = Integer::parseInt;
+		return f.apply(t);
+	}
+	
+}

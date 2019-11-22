@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest" project="testtwo" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.testtwo.web.test.CalculatorTest" time="0.0">
+    <testcase name="testAbc" classname="com.testtwo.web.test.CalculatorTest" time="0.0"/>
+    <testcase name="testSub" classname="com.testtwo.web.test.CalculatorTest" time="0.0"/>
+    <testcase name="testSum" classname="com.testtwo.web.test.CalculatorTest" time="0.0"/>
+  </testsuite>
+</testrun>

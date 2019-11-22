@@ -1,0 +1,23 @@
+package com.testtwo.web.pxy;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Data
+@Lazy
+@Component("pager")
+public class PageProxy extends Proxy {
+
+	private int rowCount, startRow, endRow,
+				pageCount, pageSize, pageNum, startPage, endPage,
+				blockCount, blockSize, blockNum, startBlock, endBlock;
+	private boolean existPrev, existNext;
+	private String search;
+	
+	public void paging() {
+		rowCount = 0;
+	}
+	
+}

@@ -1,0 +1,10 @@
+package com.stock.web.sejong;
+
+public class BugsMapper {
+
+	public String countArticle() {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+}

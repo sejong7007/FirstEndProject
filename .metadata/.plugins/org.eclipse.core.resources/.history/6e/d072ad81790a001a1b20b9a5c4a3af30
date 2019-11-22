@@ -1,0 +1,42 @@
+package com.testtwo.web.pxy;
+
+import java.util.Map;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+
+
+@Component("crawler")
+@Lazy
+public class CrawlingPorxy extends Proxy{
+
+	@Autowired Box<String> box;
+	@Autowired Inventory<String> inventory;
+	
+	public Inventory<String> engChoose(Map<?, ?> paramMap) {
+
+		return engCrawling("https://endic.naver.com/?sLn=kr");
+	}
+	
+	private Inventory<String> engCrawling(String url) {
+		inventory.clear();
+		try {
+			Document rawData = Jsoup.connect(url).timeout(10 * 1000).get();
+			Elements artist = rawData.select("div[class=\"txt_origin\"] a");
+			for (Element e : artist) {
+				inventory.add(e.text() + "\n");
+
+			}
+			System.out.println("box에 담긴: " + box);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return inventory;
+	}
+}

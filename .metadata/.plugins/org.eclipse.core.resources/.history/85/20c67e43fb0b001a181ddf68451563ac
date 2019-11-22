@@ -1,0 +1,9 @@
+var pop = pop || {}
+
+pop ={
+	
+	open : e => {},
+	close : e => {},
+	view : e=>{}
+		
+}

@@ -1,0 +1,12 @@
+
+11월 19, 2019 17:46:58.82 NEW SESSION
+11월 19, 2019 17:46:58.82 [6068:9608:1119/174658.818:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 19, 2019 17:47:03.18 [6068:9608:1119/174703.185:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 19, 2019 17:58:46.62 [6068:9608:1119/175846.624:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 19, 2019 17:58:46.62 [6068:9608:1119/175846.624:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+11월 21, 2019 17:09:40.23 NEW SESSION
+11월 21, 2019 17:09:40.23 [11088:9520:1121/170940.230:ERROR:mcs_client.cc(760)] Received close command, resetting connection.
+
+11월 22, 2019 08:45:25.29 NEW SESSION
+11월 22, 2019 08:45:25.29 [9532:7700:1122/084525.291:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates

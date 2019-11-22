@@ -1,0 +1,37 @@
+package com.testtwo.web.crawler;
+
+import java.util.HashMap;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.testtwo.web.pxy.CrawlingPorxy;
+
+@RestController
+@RequestMapping("/crawler")
+public class CrawlerCtrl {
+
+	@GetMapping("/naver")
+	public HashMap<String, Object> naverCrawling(){
+		System.out.println("naver 들어옴");
+		HashMap<String, Object> map = new HashMap<>();
+		String param = "";
+		CrawlingPorxy.engCrawling(param);
+		map.put("msg", "SUCCESS");
+		return map;
+	}
+	
+	@GetMapping("/cgv")
+	public HashMap<String, Object> cgvCrawling(){
+		System.out.println("cgv 들어옴");
+		return null;
+	}
+	
+	@GetMapping("/bugs")
+	public HashMap<String, Object> bugsCrawling(){
+		System.out.println("bugs 들어옴");
+		return null;
+	}
+	
+}

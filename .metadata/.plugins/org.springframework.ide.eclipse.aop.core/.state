@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="mh"/>
+<aop-project name="hanrabong"/>
+<aop-project name="testtwo"/>
+<aop-project name="testone"/>
+<aop-project name="test_project"/>
+<aop-project name="ship"/>
+<aop-project name="goodfortest"/>
+</aop-reference-model>

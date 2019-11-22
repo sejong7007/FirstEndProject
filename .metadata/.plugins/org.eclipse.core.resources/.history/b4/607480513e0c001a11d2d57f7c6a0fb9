@@ -1,0 +1,14 @@
+package com.testtwo.web.cus;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CustomerCtrl {
+
+	@Autowired CustomerMapper customerMapper;
+
+	public int rowCount(){
+		int rowCount = customerMapper.rowCount();
+		return rowCount;
+	}
+	
+}

@@ -1,0 +1,36 @@
+package com.testtwo.web.pxy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Data
+@Lazy
+@Component("pager")
+public class PageProxy extends Proxy {
+
+	@Autowired CrawlingProxy crawler;
+	
+	private int rowCount, startRow, endRow,
+				pageCount, pageSize, pageNum, startPage, endPage,
+				blockCount, blockSize, blockNum, startBlock, endBlock;
+	private boolean existPrev, existNext;
+	private String search;
+	
+	public void paging() {
+		
+		pageCount =(rowCount%pageSize!=0)? rowCount/pageSize+1 : rowCount/pageSize;
+		blockCount =(pageCount%blockSize!=0)? pageCount/blockSize+1 : pageCount/blockSize;
+		blockNum = (pageCount%pageNum!=0)? pageNum/pageSize+1 : pageNum/pageSize;
+		startRow = (pageNum-1)*pageSize+1;
+		endRow = (pageCount!=pageNum)? pageNum*pageSize : rowCount;
+		startPage = (blockNum-1)*pageSize+1;
+		endPage = (blockCount!=blockNum)? blockNum*blockSize : pageCount;
+		existPrev = (blockNum!=1);
+		existNext = (blockNum!=blockCount);
+		
+	}
+	
+}

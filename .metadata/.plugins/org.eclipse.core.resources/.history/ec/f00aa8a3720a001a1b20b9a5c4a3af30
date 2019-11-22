@@ -1,0 +1,8 @@
+package com.testtwo.web.pxy;
+
+import java.util.ArrayList;
+
+public class List<T> {
+
+	private ArrayList<T> list;
+}

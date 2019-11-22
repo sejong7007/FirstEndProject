@@ -1,0 +1,21 @@
+package com.testtwo.web.cus;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.testtwo.web.pxy.Box;
+import com.testtwo.web.pxy.Proxy;
+
+public class CustomerCtrl {
+
+	@Autowired CustomerMapper cusMapper;
+	@Autowired Box<Integer> box;
+	@Autowired Proxy pxy;
+	
+	public int rowCount(){
+		int rowCount = cusMapper.rowCount();
+		pxy.print("rowCount"+rowCount);
+		box.put("rowCount", rowCount);
+		return box.get("rowCount");
+	}
+	
+}

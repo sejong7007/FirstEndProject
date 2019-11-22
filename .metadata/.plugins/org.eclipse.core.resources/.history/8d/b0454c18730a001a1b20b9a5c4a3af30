@@ -1,0 +1,16 @@
+package com.testtwo.web.pxy;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class List<T> {
+
+	private ArrayList<T> list;
+	
+	public void add (T t) {
+		list = new ArrayList<>();
+		list.add(t);
+	}
+}
